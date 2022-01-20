@@ -24,7 +24,16 @@
     <dependency>
       <groupId>org.jboss.resteasy</groupId>
       <artifactId>resteasy-client-microprofile</artifactId>
-      <version>4.5.10.Final</version>
+      <version>4.7.5.Final</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- this dependency may seem redundant in the presence of jakartaee-api, but the latter is missing a properties file
+         that is indirectly required by the RESTEasy MP REST Client via javax.servlet.ServletOutputStream -->
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>4.0.4</version>
       <scope>test</scope>
     </dependency>
 
