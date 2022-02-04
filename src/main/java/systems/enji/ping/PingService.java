@@ -9,7 +9,6 @@ import systems.enji.ping.api.IPingService;
  */
 public class PingService implements IPingService {
 
-  
   @Override
   public String ping() {
     return "pong";
